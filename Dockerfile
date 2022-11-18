@@ -28,11 +28,5 @@ ENV PATH /usr/local/bin/hisat2-${hisat2_version}/genotype_scripts:${PATH}
 ENV PATH /usr/local/bin/hisat2-${hisat2_version}:${PATH}
 ENV PYTHONPATH /usr/local/bin/hisat2-${hisat2_version}/hisatgenotype_modules:${PYTHONPATH}
 
-# download the graph index, (this may not be the most up to date)
-WORKDIR /opt
-RUN wget ftp://ftp.ccb.jhu.edu/pub/infphilo/hisat-genotype/data/genotype_genome_20180128.tar.gz
-RUN tar -xzvf genotype_genome_20180128.tar.gz
-RUN rm -f genotype_genome_20180128.tar.gz
-
 # set default command
 WORKDIR /usr/local/bin
