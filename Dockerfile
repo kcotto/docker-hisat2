@@ -1,5 +1,5 @@
 # work from latest LTS ubuntu release
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 # set environment variables
 ENV hisat2_version 2.2.1
