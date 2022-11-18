@@ -13,8 +13,7 @@ RUN apt-get update -y && apt-get install -y \
     libpthread-stubs0-dev \
     default-jdk \
     python3 \
-    python \
-    python-pip
+    python3-pip
 
 # install hisat2
 WORKDIR /usr/local/bin
